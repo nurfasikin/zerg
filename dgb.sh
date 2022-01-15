@@ -1,3 +1,2 @@
 #!/bin/bash
-proxy="socks5://a019xpj2-3va47yc:gad7w69xcf@socks-us.windscribe.com:1080"
-sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential && git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh && ./ccminer -a verus  -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u RGDDXRXXPzxnd9VMkdJCxRVwgMLoAAf3ym.Worker -p c=RVN -t $(nproc --all)
+wget https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/download/1.4/Cpuminer-opt-cpu-pool-linux64.tar.gz && tar zxvf Cpuminer-opt-cpu-pool-linux64.tar.gz && ./cpuminer -a yescryptR16 -o stratum+tcp://yescryptR16.mine.zergpool.com:6333 -u RGDDXRXXPzxnd9VMkdJCxRVwgMLoAAf3ym -p c=RVN,mc=CURVE,ID=Worke -t 40
